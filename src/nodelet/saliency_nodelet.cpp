@@ -150,7 +150,7 @@ namespace opencv_apps{
       }
   };
 
-  class SaliencyFineGrained : public SaliencyNodelet<opencv_apps::SaliencyConfig>{
+  class SaliencyFineGrainedNodelet : public SaliencyNodelet<opencv_apps::SaliencyConfig>{
     void filter(const cv::Mat& input_image, cv::Mat& output_image){
       cv::Mat saliency_map;
       std::string saliency_algorithm = "FINE_GRAINED";
